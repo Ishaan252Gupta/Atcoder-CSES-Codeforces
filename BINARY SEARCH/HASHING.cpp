@@ -20,12 +20,8 @@ int main(){
     cout<<m.count("mera")<<endl;
     //erase
     cout<<m.erase("mera")<<endl;
-   
-    for(auto it:m){
-        cout<<it.first<<" "<<it.second<<endl;
+    for(auto it=m.begin();it!=m.end();it++){
+        cout<<it->first<<" "<<it->second<<endl;
     }
-
-    cout<<m[0];
-
     return 0;
 }
