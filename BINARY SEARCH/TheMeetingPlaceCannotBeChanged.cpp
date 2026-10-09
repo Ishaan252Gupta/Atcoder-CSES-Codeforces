@@ -9,8 +9,8 @@ using namespace std;
 using ld = long double;
 
 bool check(ld mid, vector<ld> pos, vector<ld> speed) {
-    ld left = -100000000;
-    ld right = 100000000;
+    ld left = -100000000000;
+    ld right = 100000000000;
 
     for (int i = 0; i < pos.size(); i++) {
         ld currleft = pos[i] - (mid * speed[i]);
